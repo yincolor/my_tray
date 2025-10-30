@@ -1,0 +1,56 @@
+{
+    "name": "我的托盘",
+    "icon_path": "../tray_icon.png",
+    "menu_item_list": [
+        {
+            "id": 0,
+            "label": "退出",
+            "type": 1,
+            "remark":"type: 1 普通按钮 | 2 带复选框的按钮 | -1 有子级菜单的按钮 "
+        },
+        {
+            "id": 1,
+            "label": "打开网站",
+            "type": 1
+        },
+        {
+            "id": 3,
+            "label": "菜单名称3",
+            "type": 2
+        },
+        {
+            "id": 4,
+            "label": "子菜单名称1",
+            "type": -1,
+            "children": [
+                {
+                    "id": 5,
+                    "label": "菜单名称4",
+                    "type": 1
+                },
+                {
+                    "id": 5,
+                    "label": "菜单名称5",
+                    "type": 2
+                },
+                {
+                    "id": 5,
+                    "label": "子菜单名称6",
+                    "type": -1,
+                    "children": [
+                        {
+                            "id": 5,
+                            "label": "菜单名称4",
+                            "type": 1
+                        },
+                        {
+                            "id": 5,
+                            "label": "菜单名称5",
+                            "type": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "name": "托盘名称",
+    "icon_path": "../tray_icon.png",
+    "menu_item_list": [
+        {
+            "id": 1,
+            "label": "菜单名称1",
+            "type": 0,
+            "remark":"type: 1 普通按钮 | 2 带复选框的按钮 | -1 有子级菜单的按钮 "
+        },
+        {
+            "id": 2,
+            "label": "菜单名称2",
+            "type": 0
+        },
+        {
+            "id": 3,
+            "label": "菜单名称3",
+            "type": 1
+        },
+        {
+            "id": 4,
+            "label": "子菜单名称1",
+            "type": 2,
+            "children": [
+                {
+                    "id": 5,
+                    "label": "菜单名称4",
+                    "type": 0
+                },
+                {
+                    "id": 5,
+                    "label": "菜单名称5",
+                    "type": 0
+                },
+                {
+                    "id": 5,
+                    "label": "子菜单名称6",
+                    "type": 2,
+                    "children": [
+                        {
+                            "id": 5,
+                            "label": "菜单名称4",
+                            "type": 0
+                        },
+                        {
+                            "id": 5,
+                            "label": "菜单名称5",
+                            "type": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

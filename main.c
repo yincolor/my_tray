@@ -68,21 +68,6 @@ int main(int argc, char *argv[])
 
     tray = tray_new_by_config_json_string(tray_json_str, on_my_menu_item_active_call, &argc, &argv);  
     
-    // printf("[main] 托盘应用初始化\n");
-    // int init_status = tray_init(tray, &argc, &argv); 
-    // if(init_status < 0){
-    //     printf("[main] 托盘初始化失败\n");
-    //     return -1; 
-    // }
-    
-    // printf("[main] 设置菜单\n");
-    // char *menu_name_list[] = {"打开网站", "退出", NULL};
-    // int set_menu_status = tray_set_simple_menu_by_menu_list(tray, menu_name_list, on_my_menu_button_clicked_call); 
-    // if(set_menu_status < 0){
-    //     printf("[main] 托盘的菜单创建失败\n");
-    //     return -2; 
-    // }
-    
     tray_print_info(tray);
     printf("[main] 托盘应用启动\n"); 
     tray_start_main_loop(tray); 
